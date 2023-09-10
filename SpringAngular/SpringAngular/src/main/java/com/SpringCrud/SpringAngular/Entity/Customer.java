@@ -1,16 +1,17 @@
 package com.SpringCrud.SpringAngular.Entity;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Table(name = "customer")
 public class Customer {
 
     @Id
-    @Column(value = "customerid",length = 50)
+    @Column(name = "customer_id",length = 50)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private  int customerid;
+
+
     private String customername;
     private  String customeraddress;
     private int mobile;
