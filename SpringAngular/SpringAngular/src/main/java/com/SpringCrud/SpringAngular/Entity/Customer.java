@@ -19,7 +19,27 @@ public class Customer {
     public Customer() {
     }
 
+    public int getCustomerid() {
+        return customerid;
+    }
 
-    
+    public void setCustomerid(int customerid) {
+        this.customerid = customerid;
+    }
 
+    public String getCustomername() {
+        return customername;
+    }
+
+    public void setCustomername(String customername) {
+        this.customername = customername;
+    }
+
+    public int getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(int mobile) {
+        this.mobile = mobile;
+    }
 }
