@@ -7,7 +7,7 @@ public class CustomerDTO {
     private  int customerid;
     private String customername;
     private  String customeraddress;
-    private int mobile1;
+    private int mobile;
 
     public CustomerDTO(int customerid, String customername, String customeraddress, int mobile) {
         this.customerid = customerid;
