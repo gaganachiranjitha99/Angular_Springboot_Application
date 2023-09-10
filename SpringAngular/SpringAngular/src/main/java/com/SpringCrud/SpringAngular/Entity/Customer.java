@@ -8,6 +8,7 @@ public class Customer {
 
     private  int customerid;
     private String customername;
+    private  String customeraddress;
     private int mobile;
 
     public Customer(int customerid, String customername, int mobile) {
