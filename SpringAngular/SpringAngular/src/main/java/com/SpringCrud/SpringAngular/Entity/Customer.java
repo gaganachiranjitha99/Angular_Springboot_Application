@@ -1,11 +1,15 @@
 package com.SpringCrud.SpringAngular.Entity;
 
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Table(name = "customer")
 public class Customer {
 
+    @Id
+    @Column(value = "customerid",length = 50)
     private  int customerid;
     private String customername;
     private  String customeraddress;
