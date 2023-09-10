@@ -11,9 +11,10 @@ public class Customer {
     private  String customeraddress;
     private int mobile;
 
-    public Customer(int customerid, String customername, int mobile) {
+    public Customer(int customerid, String customername, String customeraddress, int mobile) {
         this.customerid = customerid;
         this.customername = customername;
+        this.customeraddress = customeraddress;
         this.mobile = mobile;
     }
 
@@ -42,5 +43,13 @@ public class Customer {
 
     public void setMobile(int mobile) {
         this.mobile = mobile;
+    }
+
+    public String getCustomeraddress() {
+        return customeraddress;
+    }
+
+    public void setCustomeraddress(String customeraddress) {
+        this.customeraddress = customeraddress;
     }
 }
