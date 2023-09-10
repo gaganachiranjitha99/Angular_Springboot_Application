@@ -11,9 +11,13 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private  int customerid;
 
-
+@Column(name = "customer_name" ,length = 50)
     private String customername;
+
+@Column(name = "customer_address",length = 60)
     private  String customeraddress;
+
+@Column(name = "customer_mobile",length = 12)
     private int mobile;
 
     public Customer(int customerid, String customername, String customeraddress, int mobile) {
